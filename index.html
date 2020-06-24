@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <!-- Remove Favicon -->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <title>Corona Update</title>
+    <style>
+      body {
+        background: #fef9e7;
+        box-sizing: border-box;
+        font-family: 'consolas', 'monospace';
+      }
+      #covidChart {
+        margin: 30px 10px;
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid bg-transparent text-center p-5 my-3">
+      <h1>Covid 19 Tracker in India</h1>
+      <h5 class="text-muted">
+        Open Source Project for Covid-19 cases Tracking in India using API
+      </h5>
+    </div>
+    <div class="container my-15">
+      <div class="row text-center count">
+        <div class="col-lg-3 text-warning">
+          <h5>Confirmed</h5>
+          <p id="confirmed"></p>
+        </div>
+        <div class="col-lg-3 text-info">
+          <h5>Active</h5>
+          <p id="active"></p>
+        </div>
+        <div class="col-lg-3 text-success">
+          <h5>Recovered</h5>
+          <p id="recovered"></p>
+        </div>
+        <div class="col-lg-3 text-danger">
+          <h5>Deceased</h5>
+          <p id="deaths"></p>
+        </div>
+      </div>
+      <canvas id="covidChart"></canvas>
+    </div>
+    <script></script>
+    <!-- Proper JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Chart JS CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-alpha/Chart.min.js"
+      integrity="sha256-7l53+mu/oEO4J97EJMByaRPcmFaMmh+GFhHVE0x5rUE="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
